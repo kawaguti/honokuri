@@ -2,7 +2,7 @@
 
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
+const { token, formUrl } = require('./config.json');
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -21,7 +21,7 @@ client.on('interactionCreate', async interaction => {
         const member_tag = interaction.member.user.tag;
         console.log(member_tag);
         const user_id = encodeURIComponent(member_tag);
-		await interaction.reply("https://docs.google.com/forms/d/e/1FAIpQLSf5ueFr41vkR0aqh_SddA1cUdgL1n6GOGOmAdTlOsev-b8P3w/viewform?usp=pp_url&entry.1882509969=" + user_id);
+		await interaction.reply(formUrl + user_id);
         return;
 	}
 
