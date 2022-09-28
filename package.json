@@ -1,0 +1,22 @@
+{
+  "name": "honokuri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawaguti/honokuri.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawaguti/honokuri/issues"
+  },
+  "homepage": "https://github.com/kawaguti/honokuri#readme",
+  "dependencies": {
+    "discord.js": "^14.5.0"
+  }
+}
